@@ -1,0 +1,37 @@
+# application: simple-personal-page
+runtime: php55
+threadsafe: yes
+
+handlers:
+
+# Serve main page
+- url: /
+  static_files: index.html
+  upload: index.html
+  
+# Stylesheets
+- url: /css
+  static_dir: css
+  
+# Fonts
+- url: /fonts
+  static_dir: fonts
+  
+# Javascript
+- url: /js
+  static_dir: js
+  
+- url: /resume
+  static_dir: resume
+
+# Serve images as static resources.
+- url: /(.+\.(gif|png|jpg|jpeg))$
+  static_files: \1
+  upload: .+\.(gif|png|jpg|jpeg)$
+  application_readable: true
+  
+  # Serve pdf
+- url: /(.+\.pdf)$
+  static_files: \1
+  upload: /(.+\.pdf)$
+  application_readable: true
