@@ -7,15 +7,37 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <link type="text/css" rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(54438319, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/54438319" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        ym(54438319, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+
+    </script> <noscript>
+        <div><img src="https://mc.yandex.ru/watch/54438319" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript> <!-- /Yandex.Metrika counter -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28550402-3"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-28550402-3');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-28550402-3');
+
     </script>
 
 </head>
@@ -28,16 +50,17 @@
 
     <div class="centered name-card">
         <h1>Alexander Kuznetsov</h1>
+
         <p style="text-align: center">
-                    <a href="resume/resume.pdf" target="_blank"><button class="btn btn-glossy inverse btn-dark" style="margin: 15px 20px 0px 20px"><span>Download my CV</span></button></a>
-                    <a href="mailto:alexander.kuznetsov96@gmail.com"><button class="btn btn-glossy inverse btn-dark" style="margin: 15px 20px 0px 20px"><span>Get in Touch</span></button></a>
-                </p>
+            <a href="resume/resume.pdf" target="_blank"><button class="btn btn-glossy inverse btn-dark" style="margin: 15px 20px 0px 20px"><span>Download my CV</span></button></a>
+            <a href="mailto:me@skz.dev"><button class="btn btn-glossy inverse btn-dark" style="margin: 15px 20px 0px 20px"><span>Get in Touch</span></button></a>
+        </p>
         <div class="social">
             <a href="https://www.linkedin.com/in/alexanderkuznetsov96" target="about:_blank"><img src="img/social/linkedin-dark.png"></a>
             <a href="https://medium.com/alexander-kuznetsov" target="about:_blank"><img src="img/social/medium-dark.png"></a>
             <a href="http://github.com/alexanderkuznetsov96" target="about:_blank"><img src="img/social/github-dark.png"></a>
-<!--            TODO: add stack overflow-->
-<!--            <a href="https://stackoverflow.com/users/2399605/alexander-kuznetsov" target="about:_blank"><img src="img/social/stack-overflow-dark.png"></a>-->
+            <!--            TODO: add stack overflow-->
+            <!--            <a href="https://stackoverflow.com/users/2399605/alexander-kuznetsov" target="about:_blank"><img src="img/social/stack-overflow-dark.png"></a>-->
         </div>
     </div>
 
@@ -59,7 +82,7 @@
 			}
 		</script>
 
-<!--    TODO: make init camera position higher-->
+    <!--    TODO: make init camera position higher-->
     <script type="module">
         import * as THREE from '/js/three.module.js';
 //			import Stats from '/js/stats.module.js';
